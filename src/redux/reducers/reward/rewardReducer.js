@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    reward: {},
+    reward: null,
     error: undefined,
 }
 

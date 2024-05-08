@@ -28,13 +28,15 @@ export function ChangePointForReward() {
   const getState = useSelector((state) => state.userOrderReducer.userOrder);
   const currentReward = useSelector((state) => state.rewardReducer.reward);
 
- useEffect(() => {
-  if (!loggedInUser || loggedInUser.points < reward.price) {
-    navigate("/"); 
-    toast.error("Nemate dovoljno bodova za ovu nagradu.");
-    
-  }
-}, [loggedInUser, reward]);
+  useEffect(() => {
+    if (!currentReward) {
+      navigate("/");
+      toast.error("Niste odabrali nagradu");
+    } else if (!loggedInUser || loggedInUser.points < currentReward.price) {
+      navigate("/"); 
+      toast.error("Nemate dovoljno bodova za ovu nagradu.");
+    }
+  }, [loggedInUser]);
 
   useEffect(() => {
     async function fetchReward() {
