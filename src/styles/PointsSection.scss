@@ -1,0 +1,33 @@
+:root {
+  --linear-gradient: linear-gradient(
+    90deg,
+    #bd8b2e 22.07%,
+    #e8d476 36.51%,
+    #bf9b3a 49.98%,
+    #e8d370 68.27%,
+    #dfc667 87.52%,
+    #edd97d 118.32%
+  );
+}
+
+  .points-section-container {
+    width: 100%;
+    max-width: 1920px;
+    background-image: url("../../public/assets/points_bg.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: bottom;
+
+  .total-points {
+    border: 1px solid black;
+    background: var(--linear-gradient);
+  }
+
+  @media screen and (max-width: 600px) {
+
+    background-image: url("../../public/assets/points_bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat !important;
+  
+  }
+}

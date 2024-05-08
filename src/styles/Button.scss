@@ -1,0 +1,53 @@
+:root {
+  --linear-gradient: linear-gradient(
+    90deg,
+    #bd8b2e 22.07%,
+    #e8d476 36.51%,
+    #bf9b3a 49.98%,
+    #e8d370 68.27%,
+    #dfc667 87.52%,
+    #edd97d 118.32%
+  );
+  --radial-gradient: radial-gradient(
+    48.91% 48.91% at 49.99% 50%,
+    #ee382c 0%,
+    #ea362c 29%,
+    #e1332c 50%,
+    #d02d2d 70%,
+    #b9252e 88%,
+    #a61e2f 100%
+  );
+  --linear-gradient-disabled: linear-gradient(
+    90deg,
+    #c6c6c6 0%,
+    #e4e4e4 34%,
+    #ffffff 71%,
+    #bbbbbb 99%
+  );
+}
+
+.button {
+  background: var(--linear-gradient);
+
+  &:hover {
+    background: var(--radial-gradient);
+    color: white;
+  }
+}
+
+.border-btn {
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    var(--linear-gradient) border-box;
+
+  &:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      var(--radial-gradient) border-box;
+  }
+}
+
+.disabled-btn {
+  background: var(--linear-gradient-disabled);
+  color: #AAAAAA;
+}

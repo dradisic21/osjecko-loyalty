@@ -1,0 +1,17 @@
+.home-container {
+    @media screen and (max-width: 1024px) {
+        
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+    
+    
+      @media screen and (max-width: 600px) {
+        background-image: url("../../public/assets/bg3.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+}
+

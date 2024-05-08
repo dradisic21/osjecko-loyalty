@@ -1,0 +1,22 @@
+.success-main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url("../../public/assets/d-val.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 20px;
+  
+    
+    @media screen and (max-width: 1024px) {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  
+  
+    @media screen and (max-width: 600px) {
+      background-image: none;
+    }
+}

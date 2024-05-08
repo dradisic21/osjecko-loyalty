@@ -1,0 +1,53 @@
+.report-container{
+    .report-line{
+        background: linear-gradient(
+        90deg,
+        #bd8b2e 22.07%,
+        #e8d476 36.51%,
+        #bf9b3a 49.98%,
+        #e8d370 68.27%,
+        #dfc667 87.52%,
+        #edd97d 118.32%
+      );
+    }
+    
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: white;
+        font: inherit;
+        color: black;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        transform: translateY(0.2em);
+    
+        display: grid;
+        place-content: center;
+        flex-shrink: 0;
+    }
+    
+    input[type="checkbox"]::before {
+        content: "";
+        width: 1em;
+        height: 0.9em;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 120ms transform ease-in-out;
+    
+        background-color: black;
+    }
+    
+    input[type="checkbox"]:checked::before {
+        transform: scale(1);
+    }
+    
+    
+    textarea::placeholder {
+        color: #AAAAAA; 
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        padding: 13px 0 0 15px;
+      }
+}

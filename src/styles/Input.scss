@@ -1,0 +1,60 @@
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+  
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+   
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+   
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+   
+}
+
+
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: white;
+      font: inherit;
+      color: black;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #EBEBEB;
+      transform: translateY(0.2em);
+      display: grid;
+      place-content: center;
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+  
+      &::before {
+        content: "";
+        width: 1em;
+        height: 0.9em;
+        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 120ms transform ease-in-out;
+        background-color: black;
+      }
+  
+      &:checked::before {
+        transform: scale(1);
+        z-index: 999;
+      }
+    }
+
+  
+  textarea::placeholder {
+    color: #AAAAAA; 
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 13px 0 0 15px;
+  }
+  

@@ -1,0 +1,12 @@
+.steps-container {
+    background-image: url("../../public/assets/d-bg_participations.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+        background-image: url("../../public/assets/bg2.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+}
